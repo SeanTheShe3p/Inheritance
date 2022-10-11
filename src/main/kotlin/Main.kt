@@ -1,7 +1,12 @@
+//SeanTheShe3p aka. Sean Widdowson
+// MAD-105
+//
+//upload init 10.10 final
 fun main(){
-    var menuchoice = 1
+    var menuchoice = 1 //While loop for Menu
     while (menuchoice!=0){
-        var name =""
+
+        var name =""//variables for the user input
         var phone =""
         var address =""
         var sqft = 0.0
@@ -9,8 +14,10 @@ fun main(){
         var senior = false
         var comname = ""
         var prop = 0
+
         println("Would you like to quote another customer? 1.) Residential 2.) Commercial 0.) Quit")
-        menuchoice= readln().toInt()
+
+        menuchoice= readln().toInt()// user input
         if (menuchoice==1){
             println("Customer name?")
             name = readln().toString()
@@ -22,16 +29,18 @@ fun main(){
             sqft = readln().toDouble()
             println("Are they senior? y or n")
             sen = readln().toString()
-            if (sen=="y" || sen=="Y") {
+            if (sen=="y" || sen=="Y") {//booleanin'
                 senior = true
             }
             else{
                 senior = false
             }
-            var customer1 = Residential(name, phone, address, sqft, senior)
+
+            var customer1 = Residential(name, phone, address, sqft, senior)//THE CLASS DECLARATION
             println(customer1.calcRate())
         }
-        else if (menuchoice==2){
+
+        else if (menuchoice==2){//opt 2...always a second option..
             println("Property name?")
             comname = readln().toString()
             println("Contact name?")
@@ -44,7 +53,8 @@ fun main(){
             sqft = readln().toDouble()
             println("How many properties?")
             prop = readln().toInt()
-            var customer1 = Commercial(comname, name, phone, address, sqft, prop)
+
+            var customer1 = Commercial(comname, name, phone, address, sqft, prop)// THA DECLARATION FOR COMMERCIAL QUOTES
             println(customer1.calcRate())
         }
     }
