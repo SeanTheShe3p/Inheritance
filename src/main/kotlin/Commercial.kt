@@ -1,9 +1,6 @@
-import java.lang.reflect.Field
 import java.text.DecimalFormat
-import java.text.Format
-import java.text.Normalizer.Form
 
-class Comercial(propertyName:String, customerName:String, customerPhone:String, customerAddress:String, squareFootage:Double, numberOfProperties:Int): Customer(customerName,customerPhone,customerAddress, squareFootage){
+class Commercial(propertyName:String, customerName:String, customerPhone:String, customerAddress:String, squareFootage:Double, numberOfProperties:Int): Customer(customerName,customerPhone,customerAddress, squareFootage){
     var propertyName= ""
     var customerName = ""
     var customerPhone = ""
@@ -24,12 +21,12 @@ class Comercial(propertyName:String, customerName:String, customerPhone:String, 
         if (this.numberOfProperties==1){
             totalcost = (this.squareFootage/1000)*5
             var finalcost = dec.format(totalcost)
-            println("Commercial Property "+this.propertyName+"\nContact: "+this.customerName+"\n"+customerPhone+"\n"+customerAddress+"\n\nat a rate of $5 per 1000 sq. ft, the charge will be "+finalcost)
+            println("Commercial Property "+this.propertyName+"\nContact: "+this.customerName+"\n"+this.customerPhone+"\n"+this.customerAddress+"\nat a rate of $5 per 1000 sq. ft, the charge will be "+finalcost+".")
         }
         else if (this.numberOfProperties >=2){
             totalcost = ((this.squareFootage/1000)*5)*.9
             var finalcost = dec.format(totalcost)
-            println("Commercial Property "+this.propertyName+"\nContact: "+this.customerName+"\n"+customerPhone+"\n"+customerAddress+"\n\nat a rate of $5 per 1000 sq. ft, with a 10% discount, the charge will be "+finalcost)
+            println("Commercial Property "+this.propertyName+"\nContact: "+this.customerName+"\n"+this.customerPhone+"\n"+this.customerAddress+"\nat a rate of $5 per 1000 sq. ft, with a 10% discount, the charge will be "+finalcost+".")
         }
     }
 }
