@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1429c811-4181-4961-83bb-1366fbbab89b" name="Changes" comment="Added Try Catch//" />
+    <list default="true" id="1429c811-4181-4961-83bb-1366fbbab89b" name="Changes" comment="Added Try Catch//">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,7 +78,7 @@
       <workItem from="1665438554243" duration="8861000" />
       <workItem from="1666026731987" duration="3325000" />
       <workItem from="1666031132115" duration="3611000" />
-      <workItem from="1666045498157" duration="5030000" />
+      <workItem from="1666045498157" duration="5142000" />
     </task>
     <task id="LOCAL-00001" summary="upload">
       <created>1665446695538</created>
@@ -98,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666050034529</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added Try Catch//">
+      <created>1666050722795</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666050722795</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -66,7 +66,7 @@ fun main(){
                     address = readln()!!.toString()
                 }
             }
-            println("What is the sqft. of the property?")
+            println("What is the sqft of the property?")
             var sqft:Double = 0.0
             try {
                 sqft = readln().toDouble()
